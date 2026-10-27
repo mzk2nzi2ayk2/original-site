@@ -1,0 +1,95 @@
+@use 'mixin' as m;
+
+footer {
+    background-color: #f6f3ea;
+    box-sizing: border-box;
+    padding: 24px 32px 16px;
+    @include m.sp {
+        padding: 16px 24px;
+    }
+    .footer-container {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 0 auto;
+        .footer-top {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .site-title {
+                margin: 0;
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    flex-wrap: nowrap;
+                    img {
+                        width: 60px;
+                        @include m.sp {
+                            width: 45px;
+                        }
+                    }
+                    .site-name {
+                        color: #322214;
+                        font-family: "Newsreader", serif;
+                        font-size: 1.25rem;
+                        font-weight: normal;
+                        white-space: nowrap;
+                        @include m.sp {
+                            font-size: 0.75rem;
+                        }
+                    }
+                }
+            }
+            i {
+                width: 40px;
+                height: 40px;
+                background-color: #fff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #322214;
+                font-size: 1.125rem;
+                box-shadow: 0 2px 6px rgba(50, 34, 20, 0.08);
+                transition: opacity 0.3s, transform 0.3s;
+            }
+            i:hover {
+                opacity: 0.7;
+                transform: translateY(-2px);
+            }
+        }
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(131, 84, 37, 0.15);
+            padding-top: 12px;
+            @include m.sp {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+            p {
+                font-size: 0.75rem;
+                margin: 0;
+                @include m.sp {
+                    font-size: 0.6rem;
+                }
+            }
+            a {
+                color: #4e453e;
+                font-size: 0.75rem;
+                transition: opacity 0.3s;
+                @include m.sp {
+                    font-size: 0.6rem;
+                }
+            }
+            a:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}

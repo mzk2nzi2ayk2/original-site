@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow & Flow Coffee</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz@6..72&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">
+            <a href="#">
+                <img src="img/logo.png" alt="logo">
+                <span class="site-name">Slow & Flow Coffee</span>
+            </a>
+        </h1>
+        <nav id="nav">
+            <ul class="menu">
+                <li>
+                    <a href="#menu">メニュー</a>
+                </li>
+                <li>
+                    <a href="#info">店舗情報</a>
+                </li>
+                <li>
+                    <a href="#access">アクセス</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="concept">
+            <div class="concept-inner">
+                <div class="concept-text">
+                    <p class="sub-title">MINDFUL FOCUS & REST</p>
+                    <h2 class="main-title">
+                        あなたの「作業」<br>
+                        と「休息」に、<br>
+                        <span>豊かなコーヒーを。</span>
+                    </h2>
+                    <p class="description">
+                        緑に囲まれた開放的な空間で、<br>
+                        こだわりの一杯とともに、心地よい時間を。
+                    </p>
+                    <ul class="tag">
+                        <li><i class="fa-solid fa-wifi"></i> Wi-Fi</li>
+                        <li><i class="fa-solid fa-plug"></i> 全席電源タップ完備(AC & Type-C)</li>
+                    </ul>
+                    <p class="note">※混雑時は2時間制とさせていただきます。</p>
+                </div>
+                <div class="concept-img">
+                    <img src="img/mainvisual.png" alt="mainvisual">
+                </div>
+            </div>
+        </section>
+
+        <section class="specialty">
+            <div class="section-title">
+                <p class="section-en">OUR SPECIALTY COFFEE</p>
+                <h2 class="section-ja">こだわりのコーヒー</h2>
+            </div>
+
+            <div class="specialty-inner">
+                <div class="specialty-img">
+                    <img src="img/coffee-pouring.png" alt="coffee-pouring">
+                </div>
+                <div class="specialty-text">
+                    <p class="sub-title">A MOMENT OF BLISS</p>
+                    <h3 class="main-title">一杯のコーヒーに、感動を。</h3>
+                    <p class="description">
+                        当店では、厳選されたシングルオリジンのコーヒー豆を使用し、お客様の目の前で一杯ずつ丁寧に抽出しています。それぞれの産地が持つ豊かな風味が広がる極上のホットコーヒーを、開放的な空間とともににお楽しみください。
+                    </p>
+                    <div class="price-box">
+                        <div class="main-price">
+                            <p>
+                                ホットコーヒー1杯
+                                <span>¥550</span>
+                            </p>
+                        </div>
+                        <div class="sub-price">
+                            <p><i class="fa-solid fa-circle"></i> 2杯目以降 ¥300</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="beans-container">
+                <ul class="beans-list">
+                    <li class="bean-card">
+                        <h4 class="name-ja">エチオピア</h4>
+                        <p class="name-en">ETHIOPIA</p>
+                        <p class="description">
+                            ジャスミンのような華やかな香りと、ピーチを思わせるジューシーで爽やかな味わい。
+                        </p>
+                    </li>
+                    <li class="bean-card">
+                        <h4 class="name-ja">コロンビア</h4>
+                        <p class="name-en">COLOMBIA</p>
+                        <p class="description">
+                            カカオのような深いコクと香ばしいナッツの香り、キャラメルのような甘みが広がる一杯。
+                        </p>
+                    </li>
+                    <li class="bean-card">
+                        <h4 class="name-ja">グアテマラ</h4>
+                        <p class="name-en">GUATEMALA</p>
+                        <p class="description">
+                            青りんごのような爽やかな酸味と、ミルクチョコレートを思わせるまろやかで甘い余韻。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="section-title">
+                <p class="section-en">MENU</p>
+                <h2 class="section-ja">メニュー</h2>
+            </div>
+
+            <div class="menu-container">
+                <h3 class="category-title">DRINKS</h3>
+                <ul class="menu-list">
+                    <li class="menu-card">
+                        <div class="menu-img">
+                            <img src="img/menu-hot-coffee.png" alt="hot-coffee">
+                        </div>
+                        <div class="menu-text">
+                            <h4 class="item-name-ja">ホットコーヒー</h4>
+                            <div class="item-sub-info">
+                                <span class="item-name-en">HOT COFFEE</span>
+                                <span class="item-price">¥550</span>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li class="menu-card">
+                        <div class="menu-img">
+                            <img src="img/menu-hot-coffee.png" alt="hot-coffee">
+                        </div>
+                        <div class="menu-text">
+                            <h4 class="item-name-ja">ホットコーヒー</h4>
+                            <div class="item-sub-info">
+                                <span class="item-name-en">HOT COFFEE</span>
+                                <span class="item-price">¥550</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-card">
+                        <div class="menu-img">
+                            <img src="img/menu-hot-coffee.png" alt="hot-coffee">
+                        </div>
+                        <div class="menu-text">
+                            <h4 class="item-name-ja">ホットコーヒー</h4>
+                            <div class="item-sub-info">
+                                <span class="item-name-en">HOT COFFEE</span>
+                                <span class="item-price">¥550</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="category-title">FOODS</h3>
+                <ul class="menu-list menu-slider">
+                    <li class="menu-card">
+                        <div class="menu-img">
+                            <img src="img/menu-blt-sandwich.png" alt="blt-sandwich">
+                        </div>
+                        <div class="menu-text">
+                            <h4 class="item-name-ja">BLTサンドイッチ</h4>
+                            <div class="item-sub-info">
+                                <span class="item-name-en">BLT SANDWICH</span>
+                                <span class="item-price">¥850</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="category-title">SWEETS</h3>
+                <ul class="menu-list menu-slider">
+                    <li class="menu-card">
+                        <div class="menu-img">
+                            <img src="img/menu-cheesecake.png" alt="cheesecake">
+                        </div>
+                        <div class="menu-text">
+                            <h4 class="item-name-ja">チーズケーキ</h4>
+                            <div class="item-sub-info">
+                                <span class="item-name-en">CHEESECAKE</span>
+                                <span class="item-price">¥650</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="info">
+            <div class="section-title">
+                <p class="section-en">STORE INFORMATION</p>
+                <h2 class="section-ja">店舗情報</h2>
+            </div>
+
+            <div class="info-container">
+                <div class="info-card">
+                    <dl class="info-list">
+                        <div class="info-item">
+                            <dt><i class="fa-solid fa-location-dot"></i> 住所</dt>
+                            <dd>〒150-0001 東京都渋谷区神宮前6丁目15-14 ガーデンスクエア原宿</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt><i class="fa-solid fa-clock"></i> 営業時間</dt>
+                            <dd>09:00 - 18:00（L.O. 17:00）</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt><i class="fa-solid fa-calendar-days"></i> 定休日</dt>
+                            <dd>水曜日・木曜日</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt><i class="fa-solid fa-phone"></i> 電話番号</dt>
+                            <dd>03-XXXX-XXXX</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="access">
+            <div class="section-title">
+                <p class="section-en">ACCESS</p>
+                <h2 class="section-ja">アクセス</h2>
+            </div>
+
+            <div class="access-container">
+                <div class="access-map">
+                    <iframe src="https://maps.google.com/maps?q=35.665973,139.702280(ガーデンスクエア原宿)&z=15&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="access-text">
+                    <p class="station"><i class="fa-solid fa-person-walking"></i> 明治神宮前駅 徒歩4分 / 原宿駅 徒歩7分</p>
+                    <p class="description">
+                        表参道やキャットストリートからほど近い、落ち着いた小路裏に佇むカフェです。開放的なテーブル席、カウンター席をご用意しております。
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <h2 class="site-title">
+                    <a href="#">
+                        <img src="img/logo.png" alt="logo">
+                        <span class="site-name">Slow & Flow Coffee</span>
+                    </a>
+                </h2>
+                <a href="https://www.instagram.com/?hl=ja" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Slow & Flow Coffee. All rights reserved.</p>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

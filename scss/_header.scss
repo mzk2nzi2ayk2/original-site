@@ -1,0 +1,141 @@
+@use 'mixin' as m;
+
+header {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f3ea;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    @include m.sp {
+        padding: 12px 20px;
+    }
+    .site-title {
+        margin: 0;
+        a {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: nowrap;
+            img {
+                width: 60px;
+                @include m.sp {
+                    width: 45px;
+                }
+            }
+            .site-name {
+                color: #322214;
+                font-family: "Newsreader", serif;
+                font-size: 1.75rem;
+                white-space: nowrap;
+                @include m.sp {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+    #nav {
+        display: block;
+        @include m.sp {
+            width: 100%;
+            height: 100vh;
+            background-color: #f6f3ea;
+            color: #322214;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 20;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+        .menu {
+            display: flex;
+            gap: 36px;
+            margin: 0;
+            padding: 0;
+            @include m.sp {
+                display: flex;
+                flex-direction: column;
+                gap: 36px;
+                padding: 0;
+                margin: 0;
+            }
+            li {
+                a {
+                    color: #322214;
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .hamburger {
+        display: none;
+    }
+    @include m.sp {
+        .hamburger {
+            display: block;
+            width: 48px;
+            height: 48px;
+            background-color: #f6f3ea;
+            position: relative;
+            z-index: 30;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 4px;
+            span {
+                width: 30px;
+                height: 2px;
+                background-color: #322214;
+                position: absolute;
+                left: 12px;
+                transition: 0.3s ease-in-out;
+            }
+            span:nth-child(1) {
+                top: 15px;
+            }
+            span:nth-child(2) {
+                top: 23px;
+            }
+            span:nth-child(3) {
+                top: 31px;
+            }
+        }
+        .hamburger:hover {
+            opacity: 0.7;
+        }
+    }
+}
+@include m.sp {
+    header.open {
+        #nav {
+            opacity: 1;
+            visibility: visible;
+        }
+        .hamburger {
+            span:nth-child(1) {
+                top: 23px;
+                left: 12px;
+                background-color: #322214;
+                transform: rotate(-45deg);
+            }
+            span:nth-child(2),
+            span:nth-child(3) {
+                top: 23px;
+                background: #322214;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
