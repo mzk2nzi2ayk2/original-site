@@ -359,13 +359,20 @@ main {
                 margin-bottom: 32px;
                 display: flex;
                 align-items: center;
-                gap: 16px;
+                gap: 10px;
                 @include m.sp {
                     margin-top: 60px;
                 }
             }
             .category-title:first-child {
                 margin-top: 0;
+            }
+            .category-title::before {
+                content: '';
+                width: 20px;
+                height: 1px;
+                background-color: #322214;
+                opacity: 0.6;
             }
             .category-title::after {
                 content: '';

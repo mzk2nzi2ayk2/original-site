@@ -561,7 +561,7 @@ main #menu .menu-container .category-title {
   margin-bottom: 32px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
 }
 @media (max-width: 800px) {
   main #menu .menu-container .category-title {
@@ -570,6 +570,13 @@ main #menu .menu-container .category-title {
 }
 main #menu .menu-container .category-title:first-child {
   margin-top: 0;
+}
+main #menu .menu-container .category-title::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #322214;
+  opacity: 0.6;
 }
 main #menu .menu-container .category-title::after {
   content: "";
